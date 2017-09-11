@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+
+<welcome-file-list>
+<welcome-file>login.jsp</welcome-file>
+</welcome-file-list> 
+ <!-- <filter>
+ <filter-name>CheckLogin</filter-name>
+ <filter-class>com.atoz.survey.control.CheckLogin</filter-class>
+ </filter>
+ <filter-mapping>
+  <filter-name>CheckLogin</filter-name>
+  <url-pattern>*.jsp</url-pattern> 表示过滤地址为commentservlet的里面包含的内容 -->
+ <!-- </filter-mapping> -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.RegServlet</servlet-class>
+  </servlet>
+  <servlet> 
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddPaper</servlet-name>
+    <servlet-class>com.atoz.survey.control.AddPaper</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddQuestions</servlet-name>
+    <servlet-class>com.atoz.survey.control.AddQuestions</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletePage</servlet-name>
+    <servlet-class>com.atoz.survey.control.DeletePage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HomePage</servlet-name>
+    <servlet-class>com.atoz.survey.control.HomePage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SubmitSucess</servlet-name>
+    <servlet-class>com.atoz.survey.control.SubmitSucess</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SurveyPage</servlet-name>
+    <servlet-class>com.atoz.survey.control.SurveyPage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowResult</servlet-name>
+    <servlet-class>com.atoz.survey.control.ShowResult</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PubPaper</servlet-name>
+    <servlet-class>com.atoz.survey.control.PubPaper</servlet-class>
+  </servlet>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.UserServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+   <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GlyServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.GlyServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TypechoServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.TypechoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TreeServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.TreeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CompServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.CompServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SortServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.SortServlet</servlet-class>
+  </servlet>
+  <servlet>
+   <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GraServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.GraServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CompanyServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.CompanyServlet</servlet-class>
+  </servlet>
+  <servlet>
+   <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QuestionServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.QuestionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyPaper</servlet-name>
+    <servlet-class>com.atoz.survey.control.ModifyPaper</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyTitleServlet</servlet-name>
+    <servlet-class>ModifyTitleServlet.ModifyTitleServlet</servlet-class>
+  </servlet>
+  <servlet>
+   <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyTitle</servlet-name>
+    <servlet-class>com.atoz.survey.control.ModifyTitle</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Sectitle</servlet-name>
+    <servlet-class>com.atoz.survey.control.Sectitle</servlet-class>
+  </servlet>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Bytypeandyiji</servlet-name>
+    <servlet-class>com.atoz.survey.control.Bytypeandyiji</servlet-class>
+  </servlet>
+  <servlet>
+   <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FinishServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.FinishServlet</servlet-class>
+  </servlet>
+  <servlet>
+     <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FabuServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.FabuServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SucServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.SucServlet</servlet-class>
+  </servlet>
+ 
+  <servlet>
+   <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <servlet-class>com.atoz.survey.control.ZhuceServlet</servlet-class>
+  </servlet>
+  <servlet>
+   <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExportServlet</servlet-name>
+    <servlet-class>com.a.model.ExportServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/regServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/adminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPaper</servlet-name>
+    <url-pattern>/addPaper</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddQuestions</servlet-name>
+    <url-pattern>/addQuestions</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletePage</servlet-name>
+    <url-pattern>/deletePage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HomePage</servlet-name>
+    <url-pattern>/homePage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubmitSucess</servlet-name>
+    <url-pattern>/submitSucess</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SurveyPage</servlet-name>
+    <url-pattern>/surveyPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowResult</servlet-name>
+    <url-pattern>/showResult</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PubPaper</servlet-name>
+    <url-pattern>/pubPaper</url-pattern>
+  </servlet-mapping>
+  
+ 
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>GlyServlet</servlet-name>
+    <url-pattern>/GlyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TypechoServlet</servlet-name>
+    <url-pattern>/TypechoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TreeServlet</servlet-name>
+    <url-pattern>/TreeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompServlet</servlet-name>
+    <url-pattern>/CompServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SortServlet</servlet-name>
+    <url-pattern>/SortServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GraServlet</servlet-name>
+    <url-pattern>/GraServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompanyServlet</servlet-name>
+    <url-pattern>/CompanyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QuestionServlet</servlet-name>
+    <url-pattern>/QuestionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyPaper</servlet-name>
+    <url-pattern>/ModifyPaper</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyTitleServlet</servlet-name>
+    <url-pattern>/ModifyTitleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyTitle</servlet-name>
+    <url-pattern>/ModifyTitle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Sectitle</servlet-name>
+    <url-pattern>/Sectitle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Bytypeandyiji</servlet-name>
+    <url-pattern>/Bytypeandyiji</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FinishServlet</servlet-name>
+    <url-pattern>/FinishServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FabuServlet</servlet-name>
+    <url-pattern>/FabuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SucServlet</servlet-name>
+    <url-pattern>/SucServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <url-pattern>/ZhuceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportServlet</servlet-name>
+    <url-pattern>/ExportServlet</url-pattern>
+  </servlet-mapping>
+ 
+ <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
